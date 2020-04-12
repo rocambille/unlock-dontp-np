@@ -2,37 +2,104 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button {
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  margin: 0;
+  text-decoration: none;
+  text-align: center;
+  transition: background 250ms ease-in-out, 
+              transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: sans-serif;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  --hue: 220;
+  --saturation: 100%;
+  --lightness: 100%;
+  background: hsl(var(--hue), var(--saturation), var(--lightness));
+  color: #ffffff;
+}
+
+.button:hover,
+.button:focus {
+  --lightness: 90%;
+}
+
+.button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+.button:active {
+  transform: scale(0.9);
+}
+
+.link {
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: initial;
+  text-decoration: underline;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: inherit;
+  font-size: inherit;
+  --hue: 199;
+  --saturation: 100%;
+  --lightness: 68.2%;
+  color: hsl(var(--hue), var(--saturation), var(--lightness));
+}
+
+.link:hover,
+.link:focus,
+.link:active {
+  text-decoration: none;
+}
+
+.link:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
 }
 
 .App-header {
+  box-sizing: border-box;
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: .5rem;
   font-size: calc(10px + 2vmin);
   color: white;
+  display: grid;
+  gap: .5rem;
+  grid-template-columns: auto;
+  justify-items: center;
+  align-items: start;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 720px) {
+  .App-header {
+    grid-template-columns: repeat(2, auto);
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (min-width: 1080px) {
+  .App-header {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+@media (min-width: 1440px) {
+  .App-header {
+    grid-template-columns: repeat(4, auto);
   }
 }
