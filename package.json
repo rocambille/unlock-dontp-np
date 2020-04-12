@@ -1,5 +1,6 @@
 {
-  "name": "template-js-react-project2",
+  "homepage": "https://wasthishelpful.github.io/unlock-dontp-np",
+  "name": "unlock-dontp-np",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
