@@ -32,12 +32,12 @@ const stories = [{
   image: 'https://static.wixstatic.com/media/59baa2_ec89ebe3425b4ffab33d0cd3e836df58~mv2_d_3508_5393_s_4_2.jpg/v1/fill/w_211,h_322,al_c,q_80,usm_0.66_1.00_0.01/CoverArt_Cabrakan.webp',
   url: 'https://017aae6e-7d2b-4a50-9dfc-d78eced3774e.filesusr.com/ugd/59baa2_ec1d34bb0fe246069dd7dc12ebf8697d.pdf',
   deckSize: 24,
-}, */ {
+}, {
   name: 'Le temple de RA',
   image: 'https://static.wixstatic.com/media/59baa2_9d2e29d0b0474af68a5be337d5a0b914~mv2_d_2304_3543_s_2.png/v1/fill/w_208,h_322,al_c,q_85,usm_0.66_1.00_0.01/CoverArt_Temple%20de%20RA.webp',
   url: 'https://017aae6e-7d2b-4a50-9dfc-d78eced3774e.filesusr.com/ugd/59baa2_164fbfd3e76b4dbcb46282074693f098.pdf',
   deckSize: 24,
-}];
+} */];
 
 function App() {
   const [wantedStory, setWantedStory] = useState(null);
