@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/unlock-dontp-np/precache-manifest.04763aac42c65dce96b8f48d9b0edcff.js"
+  "/unlock-dontp-np/precache-manifest.cf15b3056b746d9b7c6cbc2712efc62e.js"
 );
 
 self.addEventListener('message', (event) => {
